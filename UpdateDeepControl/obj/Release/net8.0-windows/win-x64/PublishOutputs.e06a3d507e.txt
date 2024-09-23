@@ -1,0 +1,2 @@
+C:\UpdateDeepControl\UpdateDeepControl\bin\Release\net8.0-windows\publish\win-x64\UpdateDeepControl.pdb
+C:\UpdateDeepControl\UpdateDeepControl\bin\Release\net8.0-windows\publish\win-x64\UpdateDeepControl.exe

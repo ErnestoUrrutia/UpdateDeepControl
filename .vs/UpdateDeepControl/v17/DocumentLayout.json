@@ -1,0 +1,52 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\UpdateDeepControl\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2CC4689B-9743-4312-AF5F-E3C940A6CFD6}|UpdateDeepControl\\UpdateDeepControl.csproj|c:\\updatedeepcontrol\\updatedeepcontrol\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CC4689B-9743-4312-AF5F-E3C940A6CFD6}|UpdateDeepControl\\UpdateDeepControl.csproj|solutionrelative:updatedeepcontrol\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CC4689B-9743-4312-AF5F-E3C940A6CFD6}|UpdateDeepControl\\UpdateDeepControl.csproj|C:\\UpdateDeepControl\\updatedeepcontrol\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2CC4689B-9743-4312-AF5F-E3C940A6CFD6}|UpdateDeepControl\\UpdateDeepControl.csproj|solutionrelative:updatedeepcontrol\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\UpdateDeepControl\\UpdateDeepControl\\Form1.cs",
+              "RelativeDocumentMoniker": "UpdateDeepControl\\Form1.cs",
+              "ToolTip": "C:\\UpdateDeepControl\\UpdateDeepControl\\Form1.cs",
+              "RelativeToolTip": "UpdateDeepControl\\Form1.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowCkAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T07:40:04.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\UpdateDeepControl\\UpdateDeepControl\\Form1.cs",
+              "RelativeDocumentMoniker": "UpdateDeepControl\\Form1.cs",
+              "ToolTip": "C:\\UpdateDeepControl\\UpdateDeepControl\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "UpdateDeepControl\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T07:39:22.196Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

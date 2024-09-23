@@ -1,0 +1,6 @@
+C:\UpdateDeepControl\UpdateDeepControl\bin\Release\net8.0-windows\publish\UpdateDeepControl.exe
+C:\UpdateDeepControl\UpdateDeepControl\bin\Release\net8.0-windows\publish\UpdateDeepControl.dll
+C:\UpdateDeepControl\UpdateDeepControl\bin\Release\net8.0-windows\publish\UpdateDeepControl.deps.json
+C:\UpdateDeepControl\UpdateDeepControl\bin\Release\net8.0-windows\publish\UpdateDeepControl.runtimeconfig.json
+C:\UpdateDeepControl\UpdateDeepControl\bin\Release\net8.0-windows\publish\UpdateDeepControl.pdb
+C:\UpdateDeepControl\UpdateDeepControl\bin\Release\net8.0-windows\publish\Newtonsoft.Json.dll
