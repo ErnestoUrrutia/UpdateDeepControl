@@ -20,6 +20,7 @@ namespace UpdateDeepControl
         }
         static async Task revisar_version()
         {
+            Process.Start("taskkill", $"/f /im DeepControl.exe");
             string filePathExe = @"C:\Deep\DeepControl.exe";
             string installedVersion = "";
 
@@ -52,33 +53,32 @@ namespace UpdateDeepControl
                     {
 
                         Directory.CreateDirectory(@"C:\Deep");
+                        Process.Start("attrib", "+s +h C:\\Deep");
+
                         string zipFilePath = Path.Combine(@"C:\Deep","update.zip");
                         bool downloadSuccess = await DownloadFileAsync(downloadLink, zipFilePath);
                         if (downloadSuccess)
                         {
-                            Process.Start("taskkill", $"/f /im DeepControl.exe");
+                            //Process.Start("taskkill", $"/f /im DeepControl.exe");
                             string extractPath = "C:\\Deep";
                             DescomprimirYReemplazar(zipFilePath, extractPath);
-                            Process.Start("attrib", "+s +h C:\\Deep");
-                            Thread.Sleep(2000);
-                            Process.Start(@"C:\Deep\DeepControl.exe");
-                            Application.Exit();
+                            ejecutar();
+
+                            //Process.Start(@"C:\Deep\DeepControl.exe");
+                            //Application.Exit();
                         }
                         else
                         {
-                            Process.Start("taskkill", $"/f /im DeepControl.exe");
-                            Thread.Sleep(2000);
-                            Process.Start(@"C:\Deep\DeepControl.exe");
-                            Application.Exit();
+                            ejecutar();
                         }
 
                     }
                     else
                     {
-                        Process.Start("taskkill", $"/f /im DeepControl.exe");
-                        Thread.Sleep(2000);
-                        Process.Start(@"C:\Deep\DeepControl.exe");
-                        Application.Exit();
+
+
+                        ejecutar();
+
                     }
                 }
                 catch (Exception e)
@@ -86,15 +86,34 @@ namespace UpdateDeepControl
 
                     if (File.Exists(filePathExe))
                     {
-                        Process.Start("taskkill", $"/f /im DeepControl.exe");
-                        Thread.Sleep(2000);
-                        Process.Start(@"C:\Deep\DeepControl.exe");
+                        ejecutar();
                     }
+                   
+                }
+                finally
+                {
                     Application.Exit();
                 }
             }
         }
+        static void ejecutar()
+        {
+            Thread.Sleep(5000);
+            ProcessStartInfo startInfo = new ProcessStartInfo();
+            startInfo.FileName = "C:\\Deep\\DeepControl.exe";  // El programa que deseas iniciar
+            startInfo.UseShellExecute = true;
+            startInfo.Verb = "runas";  // Ejecutar como administrador
 
+            try
+            {
+                Process proc = Process.Start(startInfo);
+                Console.WriteLine("Proceso iniciado con permisos elevados.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al iniciar el proceso: " + ex.Message);
+            }
+        }
         static async Task<bool> DownloadFileAsync(string url, string filePath)
         {
             try

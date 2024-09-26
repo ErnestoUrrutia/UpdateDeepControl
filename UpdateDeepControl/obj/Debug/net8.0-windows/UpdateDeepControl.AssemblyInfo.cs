@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UpdateDeepControl")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+61490186faef780d0bc693b3ada03e3df1500663")]
 [assembly: System.Reflection.AssemblyProductAttribute("UpdateDeepControl")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UpdateDeepControl")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
