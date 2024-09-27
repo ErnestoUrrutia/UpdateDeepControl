@@ -20,7 +20,7 @@ namespace UpdateDeepControl
         }
         static async Task revisar_version()
         {
-            Process.Start("taskkill", $"/f /im DeepControl.exe");
+            
             string filePathExe = @"C:\Deep\DeepControl.exe";
             string installedVersion = "";
 
@@ -98,6 +98,14 @@ namespace UpdateDeepControl
         }
         static void ejecutar()
         {
+            try
+            {
+                Process.Start(@"C:\Deep\DeepControl.exe");
+            }
+            catch(Exception e) 
+            {
+            }
+            /*
             Thread.Sleep(5000);
             ProcessStartInfo startInfo = new ProcessStartInfo();
             startInfo.FileName = "C:\\Deep\\DeepControl.exe";  // El programa que deseas iniciar
@@ -113,6 +121,7 @@ namespace UpdateDeepControl
             {
                 Console.WriteLine("Error al iniciar el proceso: " + ex.Message);
             }
+            */
         }
         static async Task<bool> DownloadFileAsync(string url, string filePath)
         {
