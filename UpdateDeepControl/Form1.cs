@@ -15,8 +15,31 @@ namespace UpdateDeepControl
         {
             InitializeComponent();
             this.ShowInTaskbar = false;
-            this.Visible = false;
-            revisar_version();
+            this.Visible = false; 
+            string processName = "DeepControl"; // Aquí coloca el nombre del proceso sin extensión .exe
+            string programPath = @"C:\Deep\DeepControl.exe"; // Ruta completa del programa
+
+            // Verificar si el proceso está en ejecución
+            Process[] procesos = Process.GetProcessesByName(processName);
+            if (procesos.Length > 0)
+            {
+                foreach (Process proceso in procesos)
+                {
+                    Console.WriteLine($"El proceso {processName} está en ejecución con PID {proceso.Id}. Terminando el proceso...");
+                    // Terminar el proceso
+                    proceso.Kill();
+                    proceso.WaitForExit(); // Esperar a que termine
+                    Console.WriteLine("Proceso terminado.");
+                }
+            }
+            else
+            {
+                Console.WriteLine($"El proceso {processName} no está en ejecución.");
+            }
+
+
+        
+        revisar_version();
         }
         static async Task revisar_version()
         {
