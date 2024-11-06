@@ -37,7 +37,7 @@ namespace UpdateDeepControl
                     installedVersion = "0";
                 }
             }
-            string versionCheckUrl = "https://ernestourrutia.com.mx/update_check/version/deepcontrol/";
+            string versionCheckUrl = "https://ernestourrutia.com.mx/software/deepcontrol/version/";
             using (HttpClient client = new HttpClient())
             {
                 try
